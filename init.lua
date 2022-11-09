@@ -1,2 +1,8 @@
 require('fak.init') 
-print('Hello Farooq A. Khan') 
+
+vim.cmd([[
+call plug#begin()
+    Plug 'elmcast/elm-vim'
+    Plug 'neoclide/coc.nvim', {'branch': 'release'}
+call plug#end()
+]])
