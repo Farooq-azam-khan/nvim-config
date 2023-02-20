@@ -3,7 +3,10 @@ local lsp = require('lsp-zero')
 lsp.preset('recommended')
 
 lsp.ensure_installed({
-     "eslint", "rust_analyzer", "tsserver" 
+     "eslint", "tsserver",
+     "rust_analyzer", 
+     "pylsp",  
+
 })
 
 local cmp = require('cmp')
