@@ -1,2 +1,2 @@
 require('fak.init') 
-print('Hello Farooq A. Khan') 
+-- print('Hello Farooq A. Khan') 
