@@ -1,4 +1,3 @@
---[[
 local lsp = require('lsp-zero')
 
 lsp.preset('recommended')
@@ -29,4 +28,3 @@ lsp.setup_nvim_cmp({ mapping = cmp_mappings })
 
 
 lsp.setup()
---]]
