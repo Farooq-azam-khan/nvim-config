@@ -8,6 +8,7 @@ return require('packer').startup(function(use)
     use 'wbthomason/packer.nvim'
     -- use 'neovim/nvim-lspconfig' -- common lsp config
     use 'folke/tokyonight.nvim'
+    use 'christoomey/vim-tmux-navigator'
     use { 'neoclide/coc.nvim', branch='release' }
     use {
       'nvim-telescope/telescope.nvim', tag = '0.1.x',
