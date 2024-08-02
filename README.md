@@ -7,6 +7,7 @@
 1. `mkdir -p ~/.config/nvim/lua/fak`
 2. `wget -O ~/.config/nvim/lua/fak/packer.lua https://raw.githubusercontent.com/Farooq-azam-khan/nvim-config/main/lua/fak/packer.lua`
 3. `vim ~/.config/nvim/lua/fak/packer.lua` and type `:so` in the vim file to source packer deps
-4. `rm -r ~/.config/nvim` delete file
-5. `git clone https://github.com/Farooq-azam-khan/nvim-config.git ~/.config/nvim`2.
-6. `:PackerSync` in the same file
+4. `:PackerInstall` in the file
+5. `rm -r ~/.config/nvim` delete file
+6. `git clone https://github.com/Farooq-azam-khan/nvim-config.git ~/.config/nvim`2.
+7. `:PackerSync` in the same file
