@@ -4,7 +4,7 @@
 - you can install the appimage file and alias it in you `~/.bashrc` file with the `alias` command
 
 0. install packer from https://github.com/wbthomason/packer.nvim
-1. `wget -P ~/.config/nvim/fak/packer.lua https://raw.githubusercontent.com/Farooq-azam-khan/nvim-config/main/lua/fak/packer.lua`
+1. `wget -O ~/.config/nvim/fak/packer.lua https://raw.githubusercontent.com/Farooq-azam-khan/nvim-config/main/lua/fak/packer.lua`
 2. `vim ~/.config/nvim/lua/fak/packer.lua` and type `:so` in the vim file to source packer deps
 3. `rm -r ~/.config/nvim` delete file
 4. `git clone https://github.com/Farooq-azam-khan/nvim-config.git ~/.config/nvim`2.
