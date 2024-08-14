@@ -18,7 +18,8 @@ return require('packer').startup(function(use)
     use('nvim-treesitter/nvim-treesitter', {run=':TSUpdate'})
     use('nvim-treesitter/playground')
     use('theprimeagen/harpoon')
-
+    -- themes 
+    use { "catppuccin/nvim", as = "catppuccin" }
     use {
       'VonHeikemen/lsp-zero.nvim',
       branch = 'v1.x',
