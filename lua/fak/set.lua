@@ -31,3 +31,8 @@ vim.opt.colorcolumn = "90"
 
 -- leader key
 vim.g.mapleader = " "
+
+-- space before and after curser
+vim.opt.scrolloff = 8
+vim.opt.signcolumn = "yes"
+
