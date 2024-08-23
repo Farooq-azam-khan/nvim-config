@@ -1,11 +1,11 @@
 local lsp_zero = require('lsp-zero')
-local lsp_attach = function(client, bufnr) 
+local lsp_attach = function(client, bufnr)
     lsp_zero.default_keymaps({buffer=bufnr})
-end 
+end
 
 lsp_zero.extend_lspconfig({
     capabilities=require('cmp_nvim_lsp').default_capabilities(),
-    lsp_attach = lsp_attach, 
+    lsp_attach = lsp_attach,
     ifloat_border='rounded',
     sign_text = {
         error = '✘',
@@ -61,11 +61,11 @@ cmp.setup({
         {name = 'luasnip', keyword_length = 2},
       },
     mapping = cmp.mapping.preset.insert({
-    -- Only exists for lifetime of buffer 
+    -- Only exists for lifetime of buffer
     -- i.e. any mappings used below will not override other mappings
-    ["<C-N>"] = cmp.mapping.select_prev_item(cmp_select), 
-    ["<C-n>"] = cmp.mapping.select_next_item(cmp_select), 
-    ["<C-y>"] = cmp.mapping.confirm({select=true}), 
+    ["<C-N>"] = cmp.mapping.select_prev_item(cmp_select),
+    ["<C-n>"] = cmp.mapping.select_next_item(cmp_select),
+    ["<C-y>"] = cmp.mapping.confirm({select=true}),
     ["<C-Space>"] = cmp.mapping.complete(),}),
     snippet = {
         expand = function(args)
