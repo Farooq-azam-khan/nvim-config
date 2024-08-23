@@ -24,4 +24,4 @@ tree.setup({
     on_attach=on_attach,
 })
 
-vim.keymap.set('n', '<C-b>', function () api.tree.toggle() end)
+vim.keymap.set('n', '<leader>b', function () api.tree.toggle() end)
