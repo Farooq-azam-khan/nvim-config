@@ -1,6 +1,11 @@
 # Installation
 
 - make sure you have nvim0.9 or later (https://github.com/neovim/neovim/releases/tag/stable)
+`bash
+wget -O nvim-stable.deb https://github.com/neovim/neovim-releases/releases/download/stable/nvim-linux64.deb
+sudo apt install ./nvim-stable.deb
+`
+
 - you can install the appimage file and alias it in you `~/.bashrc` file with the `alias` command
 
 0. install packer from https://github.com/wbthomason/packer.nvim
