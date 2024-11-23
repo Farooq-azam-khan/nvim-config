@@ -105,7 +105,6 @@ cmp.setup({
         { name = 'nvim_lsp' },
         { name = 'nvim_lua' },
         { name = 'buffer',  keyword_length = 3 },
-        { name = 'luasnip', keyword_length = 2 },
     },
     mapping = cmp.mapping.preset.insert({
         -- Only exists for lifetime of buffer
@@ -116,9 +115,6 @@ cmp.setup({
         ["<C-Space>"] = cmp.mapping.complete(),
     }),
     snippet = {
-        expand = function(args)
-            require('luasnip').lsp_expand(args.body)
-        end
     }
 })
 --

@@ -1,7 +1,5 @@
-
 -- devicons: https://github.com/nvim-tree/nvim-web-devicons
 require("nvim-web-devicons").refresh()
-vim.cmd.colorscheme "catppuccin"
 
 -- Fat cursor
 vim.opt.guicursor = ""
@@ -40,4 +38,3 @@ vim.g.mapleader = " "
 -- space before and after curser
 vim.opt.scrolloff = 8
 vim.opt.signcolumn = "yes"
-
