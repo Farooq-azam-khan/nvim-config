@@ -36,8 +36,8 @@ require("lazy").setup({
 	{"neovim/nvim-lspconfig"},
 	{"hrsh7th/cmp-nvim-lsp"},
 	{"hrsh7th/nvim-cmp"},
-	{"catppuccin/nvim", as="catpuccin"},
-	
+	{"catppuccin/nvim", name="catppuccin", priority=1000},
+	{"VonHeikemen/lsp-zero.nvim", branch="v4.x"},	
   },
   -- Configure any other settings here. See the documentation for more details.
   -- colorscheme that will be used when installing plugins.
