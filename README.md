@@ -1,7 +1,8 @@
 #  TODO: 
-* [ ] migrate to `lazy.nvim` as packer is not maintained since 2023
+* [x] migrate to `lazy.nvim` as packer is not maintained since 2023
 
 # Installation
+- Note: Installation is invalid for lazy.nvim update
 - make sure you have nvim0.9 or later (https://github.com/neovim/neovim/releases/tag/stable)
 ```bash
 wget -O nvim-stable.deb https://github.com/neovim/neovim-releases/releases/download/stable/nvim-linux64.deb

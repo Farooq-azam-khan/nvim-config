@@ -24,6 +24,7 @@ vim.g.maplocalleader = "\\"
 -- Setup lazy.nvim
 require("lazy").setup({
     spec = {
+        { "windwp/nvim-autopairs", event="InsertEnter", config=true },
         { "lukas-reineke/indent-blankline.nvim", main = "ibl",  opts = {} },
         { "christoomey/vim-tmux-navigator" },
         { "nvim-telescope/telescope.nvim",       tag = "0.1.8", dependencies = { "nvim-lua/plenary.nvim" } },
@@ -59,15 +60,16 @@ require("lazy").setup({
                 vim.cmd([[colorscheme catppuccin]])
             end
         },
-        { "williamboman/mason.nvim" },
-        { "williamboman/mason-lspconfig.nvim" },
-        { "neovim/nvim-lspconfig" },
         {
             "VonHeikemen/lsp-zero.nvim",
             branch = "v4.x",
             dependencies = {
                 "hrsh7th/cmp-nvim-lsp",
-                "hrsh7th/nvim-cmp"
+                "hrsh7th/nvim-cmp",
+                "williamboman/mason.nvim",
+                "williamboman/mason-lspconfig.nvim", 
+                "neovim/nvim-lspconfig",
+                "hrsh7th/cmp-buffer",
             }
         },
     },
