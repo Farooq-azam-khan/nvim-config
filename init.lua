@@ -1,4 +1,3 @@
-require('fak.init')
+-- require('fak.init')
+require('config.lazy')
 
--- devicons: https://github.com/nvim-tree/nvim-web-devicons
-require("nvim-web-devicons").refresh()
