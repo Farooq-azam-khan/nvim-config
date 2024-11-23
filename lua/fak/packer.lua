@@ -9,27 +9,27 @@ return require('packer').startup(function(use)
     use 'christoomey/vim-tmux-navigator'
     -- use { 'neoclide/coc.nvim', branch='release' }
     use {
-      'nvim-telescope/telescope.nvim', tag = '0.1.x',
-      requires = { {'nvim-lua/plenary.nvim'} }
+        'nvim-telescope/telescope.nvim', tag = '0.1.x',
+        requires = { { 'nvim-lua/plenary.nvim' } }
     }
     -- Recommended fzf for telescope
     use({ 'nvim-telescope/telescope-fzf-native.nvim', run = 'make' })
-    -- dev icons 
+    -- dev icons
     use('nvim-tree/nvim-web-devicons')
-    use('nvim-treesitter/nvim-treesitter', {run=':TSUpdate'})
+    use('nvim-treesitter/nvim-treesitter', { run = ':TSUpdate' })
     use('nvim-tree/nvim-tree.lua')
     -- use('nvim-treesitter/playground') -- Depricated
     use('theprimeagen/harpoon')
 
-    -- themes 
+    -- themes
     use({ "catppuccin/nvim", as = "catppuccin" })
-    use({'VonHeikemen/lsp-zero.nvim', branch = 'v4.x'})
-    use ({
+    use({ 'VonHeikemen/lsp-zero.nvim', branch = 'v4.x' })
+    use({
         "williamboman/mason.nvim",
         "williamboman/mason-lspconfig.nvim",
         "neovim/nvim-lspconfig",
-        'hrsh7th/nvim-cmp', 
-        'hrsh7th/cmp-nvim-lsp', 
+        'hrsh7th/nvim-cmp',
+        'hrsh7th/cmp-nvim-lsp',
         'hrsh7th/cmp-path',
         'saadparwaiz1/cmp_luasnip',
         'hrsh7th/cmp-nvim-lua',
@@ -37,5 +37,3 @@ return require('packer').startup(function(use)
         'rafamadriz/friendly-snippets',
     })
 end)
- 
-
