@@ -26,7 +26,18 @@ vim.g.maplocalleader = "\\"
 require("lazy").setup({
   spec = {
     -- import your plugins
-    { import = "plugins" },
+    {"christoomey/vim-tmux-navigator"},
+	{"nvim-telescope/telescope.nvim", tag="0.1.8", dependencies={"nvim-lua/plenary.nvim"}},
+	{"nvim-tree/nvim-web-devicons"},
+	{"nvim-treesitter/nvim-treesitter", build=":TSUpdate"},
+    {"theprimeagen/harpoon"},
+    {"nvim-tree/nvim-tree.lua"},
+	{"nvim-telescope/telescope-fzf-native.nvim", build="make"},
+	{"neovim/nvim-lspconfig"},
+	{"hrsh7th/cmp-nvim-lsp"},
+	{"hrsh7th/nvim-cmp"},
+	{"catppuccin/nvim", as="catpuccin"},
+	
   },
   -- Configure any other settings here. See the documentation for more details.
   -- colorscheme that will be used when installing plugins.
