@@ -1,6 +1,8 @@
 require('config.lazy')
-require('fak.init')
-require("plugins.harpoon")
-require("plugins.telescope")
+
 require("plugins.tree")
+require("plugins.telescope")
+require("plugins.harpoon")
 --require("plugins.treesitter")
+require("plugins.lsp")
+require('fak.init')
