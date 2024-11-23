@@ -22,8 +22,8 @@ lsp_zero.extend_lspconfig({
 
 require('mason').setup({})
 require('mason-lspconfig').setup({
-    ensure_installed = {'rust_analyzer', 'ruff', 'elmls', 'tailwindcss'}, -- 'tsserver', 'eslint', 'tailwindcss', 'lua_ls', 'elmls'
-    handlers={function(server_name) require('lspconfig')[server_name].setup({}) end}
+    ensure_installed = { 'rust_analyzer', 'ruff', 'elmls', 'tailwindcss' }, -- 'tsserver', 'eslint', 'tailwindcss', 'lua_ls', 'elmls'
+    handlers = { function(server_name) require('lspconfig')[server_name].setup({}) end }
 })
 
 
