@@ -6,19 +6,21 @@ vim.cmd [[packadd packer.nvim]]
 return require('packer').startup(function(use)
     -- Packer can manage itself
     use 'wbthomason/packer.nvim'
-    -- use 'neovim/nvim-lspconfig' -- common lsp config
-    use 'folke/tokyonight.nvim'
     use 'christoomey/vim-tmux-navigator'
-    use { 'neoclide/coc.nvim', branch='release' }
+    -- use { 'neoclide/coc.nvim', branch='release' }
     use {
       'nvim-telescope/telescope.nvim', tag = '0.1.x',
-    -- or                            , branch = '0.1.x',
       requires = { {'nvim-lua/plenary.nvim'} }
     }
+    -- Recommended fzf for telescope
+    use({ 'nvim-telescope/telescope-fzf-native.nvim', run = 'make' })
+    -- dev icons 
+    use('nvim-tree/nvim-web-devicons')
     use('nvim-treesitter/nvim-treesitter', {run=':TSUpdate'})
     use('nvim-tree/nvim-tree.lua')
     use('nvim-treesitter/playground')
     use('theprimeagen/harpoon')
+
     -- themes 
     use({ "catppuccin/nvim", as = "catppuccin" })
     use({'VonHeikemen/lsp-zero.nvim', branch = 'v4.x'})
