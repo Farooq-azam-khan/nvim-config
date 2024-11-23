@@ -18,7 +18,7 @@ return require('packer').startup(function(use)
     use('nvim-tree/nvim-web-devicons')
     use('nvim-treesitter/nvim-treesitter', {run=':TSUpdate'})
     use('nvim-tree/nvim-tree.lua')
-    use('nvim-treesitter/playground')
+    -- use('nvim-treesitter/playground') -- Depricated
     use('theprimeagen/harpoon')
 
     -- themes 
