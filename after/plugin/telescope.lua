@@ -11,6 +11,7 @@ require('telescope').setup({
 
 -- extensions can be loaded after setup function
 require('telescope').load_extension('fzf')
+require('telescope').load_extension('harpoon')
 
 local builtin = require('telescope.builtin')
 
@@ -45,6 +46,7 @@ vim.keymap.set('n', '<leader>gs', builtin.git_status, { desc = 'Telescope git st
 -- Tresitter Picker
 vim.keymap.set('n', '<leader>ts', builtin.treesitter,
     { desc = 'Telescope treesitter. List function names, variables from treesitter.' })
+
 
 -- Helpful Commands:
 -- :chechealth telescope
