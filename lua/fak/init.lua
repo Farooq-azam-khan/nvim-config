@@ -1,3 +1,10 @@
+require('config.lazy')
+require("plugins.tree")
+--require("plugins.treesitter")
+require("plugins.telescope")
+require("plugins.harpoon")
+require("plugins.lsp")
+
 -- devicons: https://github.com/nvim-tree/nvim-web-devicons
 require("nvim-web-devicons").refresh()
 
