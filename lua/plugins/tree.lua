@@ -18,7 +18,7 @@ local function on_attach(bufnr)
 end
 tree.setup({
     sort={sorter='case_sensitive',},
-    view={width=30,side='right'},
+    view={width=50,side='right'},
     --renderer={group_empty=true},
     --filters={dotfiles=true},
     on_attach=on_attach,

@@ -1,6 +1,6 @@
 require('config.lazy')
 require("plugins.tree")
---require("plugins.treesitter")
+require("plugins.treesitter")
 require("plugins.telescope")
 require("plugins.harpoon")
 require("plugins.lsp")
@@ -23,6 +23,17 @@ vim.opt.shiftwidth = 4
 vim.opt.expandtab = true
 
 vim.opt.smartindent = true
+
+-- 2 space indenting for tsx files
+vim.api.nvim_create_autocmd("FileType", {
+    pattern = "typescriptreact",
+    callback = function()
+
+        vim.bo.tabstop = 2
+        vim.bo.shiftwidth = 2
+        vim.bo.expandtab = true
+    end
+})
 
 -- no line wrap
 vim.opt.wrap = false
