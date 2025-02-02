@@ -27,3 +27,17 @@ tree.setup({
 })
 
 vim.keymap.set('n', '<leader>b', function () api.tree.toggle() end)
+
+-- Resize to x% of window width 
+local function resize_nvim_tree(percentage)
+  local width = math.floor(vim.go.columns * (percentage / 100))
+  require("nvim-tree.api").tree.resize(width)
+
+end
+
+vim.keymap.set('n', '<leader>tr', function()
+    vim.ui.input({ prompt = 'Enter width percentage: ' }, function(input)
+        local width = tonumber(input)
+        api.tree.resize({width= width})
+  end)
+end)
