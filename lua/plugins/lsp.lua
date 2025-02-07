@@ -2,6 +2,11 @@ return {
   -- add pyright to lspconfig
   {
     "neovim/nvim-lspconfig", ---@class PluginLspOpts
+    event = "LazyFile",
+    dependencies = {
+      "mason.nvim",
+      { "williamboman/mason-lspconfig.nvim", config = function() end },
+    },
     opts = {
       ---@type lspconfig.options
       servers = {
@@ -56,6 +61,7 @@ return {
         "stylua",
         "shellcheck",
         "shfmt",
+        "ruff",
         "flake8",
       },
     },
