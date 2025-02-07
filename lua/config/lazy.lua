@@ -18,6 +18,9 @@ require("lazy").setup({
   spec = {
     -- add LazyVim and import its plugins
     { "LazyVim/LazyVim", import = "lazyvim.plugins" },
+    { "windwp/nvim-autopairs", event = "InsertEnter", config = true },
+    { "christoomey/vim-tmux-navigator" },
+    --  { "nvim-tree/nvim-web-devicons" },
     -- import/override with your plugins
     { import = "plugins" },
   },
