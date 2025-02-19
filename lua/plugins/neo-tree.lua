@@ -44,9 +44,19 @@ return {
       sources = { "filesystem", "buffers", "git_status" },
       open_files_do_not_replace_types = { "terminal", "Trouble", "trouble", "qf", "Outline" },
       filesystem = {
+        filtered_items = {
+          visible = true,
+          hide_gitignored = false,
+        },
+
         bind_to_cwd = false,
         follow_current_file = { enabled = true },
         use_libuv_file_watcher = true,
+        always_show_by_pattern = { -- uses glob style patterns
+          ".env*",
+          ".github",
+          ".gitignore",
+        },
       },
       window = {
         position = "right",
