@@ -1,5 +1,8 @@
 # 💤 LazyVim
 
+# Setup
+`git clone https://github.com/Farooq-azam-khan/nvim-config.git ~/.config/nvim`
+
 # Requirements
 
 - [neovim](https://github.com/neovim/neovim/blob/master/INSTALL.md) >= 0.9
