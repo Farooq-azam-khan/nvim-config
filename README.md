@@ -8,7 +8,9 @@
 - [neovim](https://github.com/neovim/neovim/blob/master/INSTALL.md) >= 0.9
 - git >= 2.19
 - nerdfont (v3+) => https://github.com/Farooq-azam-khan/tmux-config
-- lazygit (optional)
+- [lazygit](https://github.com/jesseduffield/lazygit?tab=readme-ov-file#installation) (optional)
+- [rust/cargo](https://www.rust-lang.org/tools/install) (for blink.cmp)
+- 
 - for fzf-lua => [fzf](https://github.com/junegunn/fzf), [ripgrep](https://github.com/BurntSushi/ripgrep), [fd](https://github.com/sharkdp/fd)
   - `sudo apt install fzf`
   - `sudo apt-get install ripgrep`
