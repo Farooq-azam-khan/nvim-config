@@ -12,7 +12,7 @@ return {
         "markdown_inline",
          "ninja",
         "rst",
-=       "python",
+       "python",
         "query",
         "regex",
         "tsx",
@@ -22,8 +22,6 @@ return {
         "yaml",
         "vim",
         "yaml",
-        "latex",
-      },
     },
   },
 }
