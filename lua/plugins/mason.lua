@@ -7,6 +7,7 @@ return {
         "ruff",
         "docker-compose-language-service",
         "json-lsp",
+        "biome",
       },
     },
   },
