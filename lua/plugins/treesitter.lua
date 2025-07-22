@@ -1,6 +1,5 @@
 return {
   {
-
     "nvim-treesitter/nvim-treesitter",
     opts = {
       ensure_installed = {
@@ -11,9 +10,9 @@ return {
         "lua",
         "markdown",
         "markdown_inline",
-        "python",
-        "ninja",
+         "ninja",
         "rst",
+=       "python",
         "query",
         "regex",
         "tsx",
@@ -21,6 +20,9 @@ return {
         "dockerfile",
         "vim",
         "yaml",
+        "vim",
+        "yaml",
+        "latex",
       },
     },
   },
