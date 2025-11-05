@@ -1,5 +1,4 @@
 return {
-  { "whonore/Coqtail" },
   {
     "folke/snacks.nvim",
     opts = {
