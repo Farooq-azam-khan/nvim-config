@@ -32,7 +32,7 @@ require("lazy").setup({
   },
   install = { colorscheme = { "catppuccin", "tokyonight", "habamax" } },
   opts = {
-    colorscheme = "catpuccin",
+    colorscheme = "catppuccin",
   },
   checker = {
     enabled = true, -- check for plugin updates periodically
