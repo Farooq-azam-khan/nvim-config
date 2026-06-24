@@ -20,8 +20,6 @@ return {
         "dockerfile",
         "vim",
         "yaml",
-        "vim",
-        "yaml",
       },
     },
   },
