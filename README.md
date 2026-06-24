@@ -1,6 +1,7 @@
-# 💤 LazyVim
+# LazyVim
 
 # Setup
+
 `git clone https://github.com/Farooq-azam-khan/nvim-config.git ~/.config/nvim`
 
 # Requirements
@@ -14,14 +15,10 @@
   - `sudo apt-get install ripgrep`
   - `sudo apt install fd-find`
 
-A starter template for [LazyVim](https://github.com/LazyVim/LazyVim).
-Refer to the [documentation](https://lazyvim.github.io/installation) to get started.
-
 # Remove Cache
 
 ```bash
 rm -rf ~/.local/share/nvim
 rm -rf ~/.local/state/nvim
 rm -rf ~/.cache/nvim
-rm lazy-lock.json lazyvim.json
 ```
