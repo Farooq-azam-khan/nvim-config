@@ -1,6 +1,14 @@
 return {
   {
     "saghen/blink.cmp",
-    enabled = false,
+    lazy = false,
+    opts = {
+      cmdline = {
+        enabled = false,
+      },
+      fuzzy = {
+        implementation = "lua",
+      },
+    },
   },
 }
